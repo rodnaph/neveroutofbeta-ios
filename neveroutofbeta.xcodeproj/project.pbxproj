@@ -23,6 +23,7 @@
 		DC32B6B513D02BA3002B5FCA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32B6B413D02BA3002B5FCA /* HomeViewController.m */; };
 		DC32B6B913D02BBE002B5FCA /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6B813D02BBE002B5FCA /* HomeView.xib */; };
 		DC32B6BC13D02CB8002B5FCA /* biglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6BB13D02CB8002B5FCA /* biglogo.png */; };
+		DC563D8513D0521E0037C145 /* smalllogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC563D8413D0521E0037C145 /* smalllogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DC32B6B413D02BA3002B5FCA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DC32B6B813D02BBE002B5FCA /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		DC32B6BB13D02CB8002B5FCA /* biglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biglogo.png; sourceTree = "<group>"; };
+		DC563D8413D0521E0037C145 /* smalllogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smalllogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		DC32B67113D02B1A002B5FCA = {
 			isa = PBXGroup;
 			children = (
+				DC563D8413D0521E0037C145 /* smalllogo.png */,
 				DC32B68613D02B1A002B5FCA /* neveroutofbeta */,
 				DC32B6A013D02B1B002B5FCA /* neveroutofbetaTests */,
 				DC32B67F13D02B1A002B5FCA /* Frameworks */,
@@ -253,6 +256,7 @@
 				DC32B69413D02B1B002B5FCA /* MainWindow.xib in Resources */,
 				DC32B6B913D02BBE002B5FCA /* HomeView.xib in Resources */,
 				DC32B6BC13D02CB8002B5FCA /* biglogo.png in Resources */,
+				DC563D8513D0521E0037C145 /* smalllogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +467,7 @@
 				DC32B6AF13D02B1B002B5FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC32B6B013D02B1B002B5FCA /* Build configuration list for PBXNativeTarget "neveroutofbetaTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +476,7 @@
 				DC32B6B213D02B1B002B5FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
