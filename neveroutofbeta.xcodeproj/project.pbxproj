@@ -20,6 +20,9 @@
 		DC32B6A513D02B1B002B5FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6A313D02B1B002B5FCA /* InfoPlist.strings */; };
 		DC32B6A813D02B1B002B5FCA /* neveroutofbetaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6A713D02B1B002B5FCA /* neveroutofbetaTests.h */; };
 		DC32B6AA13D02B1B002B5FCA /* neveroutofbetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32B6A913D02B1B002B5FCA /* neveroutofbetaTests.m */; };
+		DC32B6B513D02BA3002B5FCA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32B6B413D02BA3002B5FCA /* HomeViewController.m */; };
+		DC32B6B913D02BBE002B5FCA /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6B813D02BBE002B5FCA /* HomeView.xib */; };
+		DC32B6BC13D02CB8002B5FCA /* biglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6BB13D02CB8002B5FCA /* biglogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +40,23 @@
 		DC32B68013D02B1A002B5FCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC32B68213D02B1A002B5FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC32B68413D02B1A002B5FCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DC32B68813D02B1A002B5FCA /* neveroutofbeta-Info.plist */ = {isa = PBXFileReference; path = "neveroutofbeta-Info.plist"; sourceTree = "<group>"; };
+		DC32B68813D02B1A002B5FCA /* neveroutofbeta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "neveroutofbeta-Info.plist"; sourceTree = "<group>"; };
 		DC32B68A13D02B1B002B5FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC32B68C13D02B1B002B5FCA /* neveroutofbeta-Prefix.pch */ = {isa = PBXFileReference; path = "neveroutofbeta-Prefix.pch"; sourceTree = "<group>"; };
+		DC32B68C13D02B1B002B5FCA /* neveroutofbeta-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "neveroutofbeta-Prefix.pch"; sourceTree = "<group>"; };
 		DC32B68D13D02B1B002B5FCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DC32B68F13D02B1B002B5FCA /* neveroutofbetaAppDelegate.h */ = {isa = PBXFileReference; path = neveroutofbetaAppDelegate.h; sourceTree = "<group>"; };
+		DC32B68F13D02B1B002B5FCA /* neveroutofbetaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neveroutofbetaAppDelegate.h; sourceTree = "<group>"; };
 		DC32B69013D02B1B002B5FCA /* neveroutofbetaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neveroutofbetaAppDelegate.m; sourceTree = "<group>"; };
 		DC32B69313D02B1B002B5FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		DC32B69A13D02B1B002B5FCA /* neveroutofbetaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = neveroutofbetaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC32B6A213D02B1B002B5FCA /* neveroutofbetaTests-Info.plist */ = {isa = PBXFileReference; path = "neveroutofbetaTests-Info.plist"; sourceTree = "<group>"; };
+		DC32B6A213D02B1B002B5FCA /* neveroutofbetaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "neveroutofbetaTests-Info.plist"; sourceTree = "<group>"; };
 		DC32B6A413D02B1B002B5FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC32B6A613D02B1B002B5FCA /* neveroutofbetaTests-Prefix.pch */ = {isa = PBXFileReference; path = "neveroutofbetaTests-Prefix.pch"; sourceTree = "<group>"; };
+		DC32B6A613D02B1B002B5FCA /* neveroutofbetaTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "neveroutofbetaTests-Prefix.pch"; sourceTree = "<group>"; };
 		DC32B6A713D02B1B002B5FCA /* neveroutofbetaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neveroutofbetaTests.h; sourceTree = "<group>"; };
 		DC32B6A913D02B1B002B5FCA /* neveroutofbetaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neveroutofbetaTests.m; sourceTree = "<group>"; };
+		DC32B6B313D02BA3002B5FCA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DC32B6B413D02BA3002B5FCA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DC32B6B813D02BBE002B5FCA /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		DC32B6BB13D02CB8002B5FCA /* biglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biglogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +115,9 @@
 		DC32B68613D02B1A002B5FCA /* neveroutofbeta */ = {
 			isa = PBXGroup;
 			children = (
+				DC32B6BA13D02CAC002B5FCA /* Resources */,
+				DC32B6B713D02BAD002B5FCA /* Views */,
+				DC32B6B613D02BA6002B5FCA /* Classes */,
 				DC32B68F13D02B1B002B5FCA /* neveroutofbetaAppDelegate.h */,
 				DC32B69013D02B1B002B5FCA /* neveroutofbetaAppDelegate.m */,
 				DC32B69213D02B1B002B5FCA /* MainWindow.xib */,
@@ -145,6 +155,31 @@
 				DC32B6A613D02B1B002B5FCA /* neveroutofbetaTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC32B6B613D02BA6002B5FCA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B6B313D02BA3002B5FCA /* HomeViewController.h */,
+				DC32B6B413D02BA3002B5FCA /* HomeViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		DC32B6B713D02BAD002B5FCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B6B813D02BBE002B5FCA /* HomeView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DC32B6BA13D02CAC002B5FCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B6BB13D02CB8002B5FCA /* biglogo.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +251,8 @@
 			files = (
 				DC32B68B13D02B1B002B5FCA /* InfoPlist.strings in Resources */,
 				DC32B69413D02B1B002B5FCA /* MainWindow.xib in Resources */,
+				DC32B6B913D02BBE002B5FCA /* HomeView.xib in Resources */,
+				DC32B6BC13D02CB8002B5FCA /* biglogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +290,7 @@
 			files = (
 				DC32B68E13D02B1B002B5FCA /* main.m in Sources */,
 				DC32B69113D02B1B002B5FCA /* neveroutofbetaAppDelegate.m in Sources */,
+				DC32B6B513D02BA3002B5FCA /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
