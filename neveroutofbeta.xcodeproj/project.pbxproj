@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC32B68113D02B1A002B5FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68013D02B1A002B5FCA /* UIKit.framework */; };
+		DC32B68313D02B1A002B5FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68213D02B1A002B5FCA /* Foundation.framework */; };
+		DC32B68513D02B1A002B5FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68413D02B1A002B5FCA /* CoreGraphics.framework */; };
+		DC32B68B13D02B1B002B5FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC32B68913D02B1B002B5FCA /* InfoPlist.strings */; };
+		DC32B68E13D02B1B002B5FCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32B68D13D02B1B002B5FCA /* main.m */; };
+		DC32B69113D02B1B002B5FCA /* neveroutofbetaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32B69013D02B1B002B5FCA /* neveroutofbetaAppDelegate.m */; };
+		DC32B69413D02B1B002B5FCA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC32B69213D02B1B002B5FCA /* MainWindow.xib */; };
+		DC32B69B13D02B1B002B5FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68013D02B1A002B5FCA /* UIKit.framework */; };
+		DC32B69C13D02B1B002B5FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68213D02B1A002B5FCA /* Foundation.framework */; };
+		DC32B69D13D02B1B002B5FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68413D02B1A002B5FCA /* CoreGraphics.framework */; };
+		DC32B6A513D02B1B002B5FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6A313D02B1B002B5FCA /* InfoPlist.strings */; };
+		DC32B6A813D02B1B002B5FCA /* neveroutofbetaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DC32B6A713D02B1B002B5FCA /* neveroutofbetaTests.h */; };
+		DC32B6AA13D02B1B002B5FCA /* neveroutofbetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32B6A913D02B1B002B5FCA /* neveroutofbetaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC32B69E13D02B1B002B5FCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC32B67313D02B1A002B5FCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC32B67B13D02B1A002B5FCA;
+			remoteInfo = neveroutofbeta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC32B67C13D02B1A002B5FCA /* neveroutofbeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neveroutofbeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC32B68013D02B1A002B5FCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DC32B68213D02B1A002B5FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC32B68413D02B1A002B5FCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DC32B68813D02B1A002B5FCA /* neveroutofbeta-Info.plist */ = {isa = PBXFileReference; path = "neveroutofbeta-Info.plist"; sourceTree = "<group>"; };
+		DC32B68A13D02B1B002B5FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC32B68C13D02B1B002B5FCA /* neveroutofbeta-Prefix.pch */ = {isa = PBXFileReference; path = "neveroutofbeta-Prefix.pch"; sourceTree = "<group>"; };
+		DC32B68D13D02B1B002B5FCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC32B68F13D02B1B002B5FCA /* neveroutofbetaAppDelegate.h */ = {isa = PBXFileReference; path = neveroutofbetaAppDelegate.h; sourceTree = "<group>"; };
+		DC32B69013D02B1B002B5FCA /* neveroutofbetaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neveroutofbetaAppDelegate.m; sourceTree = "<group>"; };
+		DC32B69313D02B1B002B5FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DC32B69A13D02B1B002B5FCA /* neveroutofbetaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = neveroutofbetaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC32B6A213D02B1B002B5FCA /* neveroutofbetaTests-Info.plist */ = {isa = PBXFileReference; path = "neveroutofbetaTests-Info.plist"; sourceTree = "<group>"; };
+		DC32B6A413D02B1B002B5FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC32B6A613D02B1B002B5FCA /* neveroutofbetaTests-Prefix.pch */ = {isa = PBXFileReference; path = "neveroutofbetaTests-Prefix.pch"; sourceTree = "<group>"; };
+		DC32B6A713D02B1B002B5FCA /* neveroutofbetaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neveroutofbetaTests.h; sourceTree = "<group>"; };
+		DC32B6A913D02B1B002B5FCA /* neveroutofbetaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neveroutofbetaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC32B67913D02B1A002B5FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32B68113D02B1A002B5FCA /* UIKit.framework in Frameworks */,
+				DC32B68313D02B1A002B5FCA /* Foundation.framework in Frameworks */,
+				DC32B68513D02B1A002B5FCA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC32B69613D02B1B002B5FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32B69B13D02B1B002B5FCA /* UIKit.framework in Frameworks */,
+				DC32B69C13D02B1B002B5FCA /* Foundation.framework in Frameworks */,
+				DC32B69D13D02B1B002B5FCA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC32B67113D02B1A002B5FCA = {
+			isa = PBXGroup;
+			children = (
+				DC32B68613D02B1A002B5FCA /* neveroutofbeta */,
+				DC32B6A013D02B1B002B5FCA /* neveroutofbetaTests */,
+				DC32B67F13D02B1A002B5FCA /* Frameworks */,
+				DC32B67D13D02B1A002B5FCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC32B67D13D02B1A002B5FCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B67C13D02B1A002B5FCA /* neveroutofbeta.app */,
+				DC32B69A13D02B1B002B5FCA /* neveroutofbetaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC32B67F13D02B1A002B5FCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B68013D02B1A002B5FCA /* UIKit.framework */,
+				DC32B68213D02B1A002B5FCA /* Foundation.framework */,
+				DC32B68413D02B1A002B5FCA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC32B68613D02B1A002B5FCA /* neveroutofbeta */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B68F13D02B1B002B5FCA /* neveroutofbetaAppDelegate.h */,
+				DC32B69013D02B1B002B5FCA /* neveroutofbetaAppDelegate.m */,
+				DC32B69213D02B1B002B5FCA /* MainWindow.xib */,
+				DC32B68713D02B1A002B5FCA /* Supporting Files */,
+			);
+			path = neveroutofbeta;
+			sourceTree = "<group>";
+		};
+		DC32B68713D02B1A002B5FCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B68813D02B1A002B5FCA /* neveroutofbeta-Info.plist */,
+				DC32B68913D02B1B002B5FCA /* InfoPlist.strings */,
+				DC32B68C13D02B1B002B5FCA /* neveroutofbeta-Prefix.pch */,
+				DC32B68D13D02B1B002B5FCA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC32B6A013D02B1B002B5FCA /* neveroutofbetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B6A713D02B1B002B5FCA /* neveroutofbetaTests.h */,
+				DC32B6A913D02B1B002B5FCA /* neveroutofbetaTests.m */,
+				DC32B6A113D02B1B002B5FCA /* Supporting Files */,
+			);
+			path = neveroutofbetaTests;
+			sourceTree = "<group>";
+		};
+		DC32B6A113D02B1B002B5FCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC32B6A213D02B1B002B5FCA /* neveroutofbetaTests-Info.plist */,
+				DC32B6A313D02B1B002B5FCA /* InfoPlist.strings */,
+				DC32B6A613D02B1B002B5FCA /* neveroutofbetaTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC32B67B13D02B1A002B5FCA /* neveroutofbeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC32B6AD13D02B1B002B5FCA /* Build configuration list for PBXNativeTarget "neveroutofbeta" */;
+			buildPhases = (
+				DC32B67813D02B1A002B5FCA /* Sources */,
+				DC32B67913D02B1A002B5FCA /* Frameworks */,
+				DC32B67A13D02B1A002B5FCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = neveroutofbeta;
+			productName = neveroutofbeta;
+			productReference = DC32B67C13D02B1A002B5FCA /* neveroutofbeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC32B69913D02B1B002B5FCA /* neveroutofbetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC32B6B013D02B1B002B5FCA /* Build configuration list for PBXNativeTarget "neveroutofbetaTests" */;
+			buildPhases = (
+				DC32B69513D02B1B002B5FCA /* Sources */,
+				DC32B69613D02B1B002B5FCA /* Frameworks */,
+				DC32B69713D02B1B002B5FCA /* Resources */,
+				DC32B69813D02B1B002B5FCA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC32B69F13D02B1B002B5FCA /* PBXTargetDependency */,
+			);
+			name = neveroutofbetaTests;
+			productName = neveroutofbetaTests;
+			productReference = DC32B69A13D02B1B002B5FCA /* neveroutofbetaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC32B67313D02B1A002B5FCA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DC32B67613D02B1A002B5FCA /* Build configuration list for PBXProject "neveroutofbeta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC32B67113D02B1A002B5FCA;
+			productRefGroup = DC32B67D13D02B1A002B5FCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC32B67B13D02B1A002B5FCA /* neveroutofbeta */,
+				DC32B69913D02B1B002B5FCA /* neveroutofbetaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC32B67A13D02B1A002B5FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32B68B13D02B1B002B5FCA /* InfoPlist.strings in Resources */,
+				DC32B69413D02B1B002B5FCA /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC32B69713D02B1B002B5FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32B6A513D02B1B002B5FCA /* InfoPlist.strings in Resources */,
+				DC32B6A813D02B1B002B5FCA /* neveroutofbetaTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC32B69813D02B1B002B5FCA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC32B67813D02B1A002B5FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32B68E13D02B1B002B5FCA /* main.m in Sources */,
+				DC32B69113D02B1B002B5FCA /* neveroutofbetaAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC32B69513D02B1B002B5FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC32B6AA13D02B1B002B5FCA /* neveroutofbetaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC32B69F13D02B1B002B5FCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC32B67B13D02B1A002B5FCA /* neveroutofbeta */;
+			targetProxy = DC32B69E13D02B1B002B5FCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC32B68913D02B1B002B5FCA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC32B68A13D02B1B002B5FCA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC32B69213D02B1B002B5FCA /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC32B69313D02B1B002B5FCA /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		DC32B6A313D02B1B002B5FCA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC32B6A413D02B1B002B5FCA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC32B6AB13D02B1B002B5FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC32B6AC13D02B1B002B5FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DC32B6AE13D02B1B002B5FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neveroutofbeta/neveroutofbeta-Prefix.pch";
+				INFOPLIST_FILE = "neveroutofbeta/neveroutofbeta-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC32B6AF13D02B1B002B5FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neveroutofbeta/neveroutofbeta-Prefix.pch";
+				INFOPLIST_FILE = "neveroutofbeta/neveroutofbeta-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DC32B6B113D02B1B002B5FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/neveroutofbeta.app/neveroutofbeta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neveroutofbetaTests/neveroutofbetaTests-Prefix.pch";
+				INFOPLIST_FILE = "neveroutofbetaTests/neveroutofbetaTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DC32B6B213D02B1B002B5FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/neveroutofbeta.app/neveroutofbeta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neveroutofbetaTests/neveroutofbetaTests-Prefix.pch";
+				INFOPLIST_FILE = "neveroutofbetaTests/neveroutofbetaTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC32B67613D02B1A002B5FCA /* Build configuration list for PBXProject "neveroutofbeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC32B6AB13D02B1B002B5FCA /* Debug */,
+				DC32B6AC13D02B1B002B5FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC32B6AD13D02B1B002B5FCA /* Build configuration list for PBXNativeTarget "neveroutofbeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC32B6AE13D02B1B002B5FCA /* Debug */,
+				DC32B6AF13D02B1B002B5FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC32B6B013D02B1B002B5FCA /* Build configuration list for PBXNativeTarget "neveroutofbetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC32B6B113D02B1B002B5FCA /* Debug */,
+				DC32B6B213D02B1B002B5FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC32B67313D02B1A002B5FCA /* Project object */;
+}
