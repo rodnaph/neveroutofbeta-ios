@@ -10,10 +10,8 @@
                                     initWithNibName:@"HomeView"
                                     bundle:nil];
     
-    navigationController = [[UINavigationController alloc] initWithRootViewController:homeView];
+    window.rootViewController = homeView;
     [homeView release];
-    
-    window.rootViewController = navigationController;
     
     [window makeKeyAndVisible];
     
@@ -24,7 +22,6 @@
 
 - (void)dealloc {
 
-    [navigationController release];
     [window release];
     
     [super dealloc];
