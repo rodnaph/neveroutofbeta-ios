@@ -81,7 +81,7 @@
 
     streamer = nil;
 
-//    [self play];
+    [self play];
     
 }
 
