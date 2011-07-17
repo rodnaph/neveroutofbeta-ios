@@ -49,4 +49,16 @@
     
 }
 
+- (NSString *)getDate {
+    
+    return nil;
+    
+}
+
+- (NSString *)getTitle {
+    
+    return title;
+    
+}
+
 @end

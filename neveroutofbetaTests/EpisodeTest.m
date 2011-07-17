@@ -46,4 +46,8 @@
     STAssertTrue( [episode getVersion] == nil, @"Version not nil" );
 }
 
+- (void)testDateReturnedInDbFormat {
+
+}
+
 @end

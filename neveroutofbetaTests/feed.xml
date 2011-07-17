@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Never Out Of Beta</title>
+	<atom:link href="http://www.neveroutofbeta.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.neveroutofbeta.com</link>
+	<description>Scaling the Ballmer Peak, we are a weekly irrevent tech/software podcast.</description>
+	<lastBuildDate>Sat, 09 Jul 2011 14:44:26 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.2.1</generator>
+		<item>
+		<title>Episode 0.9.2 another episode</title>
+		<link>http://www.neveroutofbeta.com/2011/07/08/episode-0-9-1-we-are-live/</link>
+		<comments>http://www.neveroutofbeta.com/2011/07/08/episode-0-9-1-we-are-live/#comments</comments>
+		<pubDate>Fri, 08 Jul 2011 15:25:42 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+				<category><![CDATA[blog]]></category>
+
+		<guid isPermaLink="false">http://www.neveroutofbeta.com/?p=7</guid>
+		<description><![CDATA[Welcome to NeverOutOfBeta! Tucked away in a dark corner of the City Arms, Carey and Gav are joined by Warren this week to talk about topics including: Security LulzSec, distributed attacks, hacker culture Phone hacking Clean code Version control Programming paradigms &#8230; <p class="top1 btm2"><a href="http://www.neveroutofbeta.com/2011/07/08/episode-0-9-1-we-are-live/"><strong>Read the rest of this article <span class="meta-nav">&#187;</span></strong></a></p>]]></description>
+			<content:encoded><![CDATA[<p>Welcome to NeverOutOfBeta! Tucked away in a dark corner of the City Arms, Carey and Gav are joined by Warren this week to talk about topics including:</p>
+<ul>
+<li>Security</li>
+<li>LulzSec, distributed attacks, hacker culture</li>
+<li>Phone hacking</li>
+<li>Clean code</li>
+<li>Version control</li>
+<li>Programming paradigms</li>
+<li>Technical culture</li>
+<li>&#8230; and more!</li>
+</ul>
+<div class="downloadLink"><a href="https://s3-eu-west-1.amazonaws.com/neveroutofbeta/NeverOutOfBeta_episode_0.9.1.mp3">Download NeverOutOfBeta_episode_0.9.1.mp3 (79.5mb)</a> (File mirrored by <a href="http://twitter.com/#!/woogoose">@woogoose</a>)</div>
+<p><small>Disclaimer: all opinions are representative of the individuals involved. This is just something we&#8217;re doing for fun; it&#8217;s possible you may find it informative but bear in mind any &#8220;facts&#8221; you hear may be unsubstantiated, exaggerated or imagined, so always do the research!</small></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.neveroutofbeta.com/2011/07/08/episode-0-9-1-we-are-live/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+    
+    <item>
+		<title>the episode title</title>
+		<link>http://www.neveroutofbeta.com/2011/07/08/episode-0-9-1-we-are-live/</link>
+		<comments>http://www.neveroutofbeta.com/2011/07/08/episode-0-9-1-we-are-live/#comments</comments>
+		<pubDate>Fri, 08 Jul 2011 15:25:42 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+        <category><![CDATA[blog]]></category>
+		<guid isPermaLink="false">http://www.neveroutofbeta.com/?p=7</guid>
+		<description><![CDATA[asd]]></description>
+        <content:encoded><![CDATA[The <b>episode</b> description]]></content:encoded>
+        <wfw:commentRss>http://www.neveroutofbeta.com/2011/07/08/episode-0-9-1-we-are-live/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+    </item>
+
+	</channel>
+</rss>

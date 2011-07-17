@@ -8,5 +8,6 @@
 }
 
 - (NSMutableArray *)getEpisodes;
+- (NSMutableArray *)getEpisodesFromUrl:(NSURL *)url;
 
 @end

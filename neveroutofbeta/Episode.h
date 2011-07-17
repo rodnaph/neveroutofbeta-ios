@@ -7,5 +7,7 @@
 
 - (NSURL *)getAudioUrl;
 - (NSString *)getVersion;
+- (NSString *)getDate;
+- (NSString *)getTitle;
 
 @end

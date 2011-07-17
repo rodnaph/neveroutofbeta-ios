@@ -22,6 +22,13 @@
     
     NSString *urlString = @"http://www.neveroutofbeta.com/feed/";
     NSURL *url = [NSURL URLWithString:urlString];
+    
+    return [self getEpisodesFromUrl:url];
+    
+}
+
+- (NSMutableArray *)getEpisodesFromUrl:(NSURL *)url {
+    
     NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
     
     if ( episodes != nil ) {
@@ -43,6 +50,8 @@
 #pragma mark XML Parsing
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
+    
+    
     
     if ( [elementName isEqualToString:@"item"] ) {
         

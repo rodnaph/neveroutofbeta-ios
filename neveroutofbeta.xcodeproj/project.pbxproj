@@ -45,6 +45,8 @@
 		DC1A0B2D13D31F5600594D9D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1A0B2C13D31F5600594D9D /* CoreText.framework */; };
 		DC1A0B2F13D31F6A00594D9D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1A0B2E13D31F6A00594D9D /* QuartzCore.framework */; };
 		DC1A0B3113D31F7900594D9D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1A0B3013D31F7900594D9D /* ImageIO.framework */; };
+		DC1A0B3C13D3265B00594D9D /* feed.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC1A0B3B13D3265B00594D9D /* feed.xml */; };
+		DC1A0B3F13D326AF00594D9D /* EpisodeFeedParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1A0B3E13D326AF00594D9D /* EpisodeFeedParserTest.m */; };
 		DC32B68113D02B1A002B5FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68013D02B1A002B5FCA /* UIKit.framework */; };
 		DC32B68313D02B1A002B5FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68213D02B1A002B5FCA /* Foundation.framework */; };
 		DC32B68513D02B1A002B5FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68413D02B1A002B5FCA /* CoreGraphics.framework */; };
@@ -149,6 +151,9 @@
 		DC1A0B2C13D31F5600594D9D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		DC1A0B2E13D31F6A00594D9D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DC1A0B3013D31F7900594D9D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DC1A0B3B13D3265B00594D9D /* feed.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = feed.xml; sourceTree = "<group>"; };
+		DC1A0B3D13D326AF00594D9D /* EpisodeFeedParserTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeFeedParserTest.h; sourceTree = "<group>"; };
+		DC1A0B3E13D326AF00594D9D /* EpisodeFeedParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeFeedParserTest.m; sourceTree = "<group>"; };
 		DC32B67C13D02B1A002B5FCA /* neveroutofbeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neveroutofbeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC32B68013D02B1A002B5FCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC32B68213D02B1A002B5FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -228,6 +233,8 @@
 			children = (
 				DC1A0ABB13D30E0900594D9D /* EpisodeTest.h */,
 				DC1A0ABC13D30E0900594D9D /* EpisodeTest.m */,
+				DC1A0B3D13D326AF00594D9D /* EpisodeFeedParserTest.h */,
+				DC1A0B3E13D326AF00594D9D /* EpisodeFeedParserTest.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -307,6 +314,14 @@
 			name = AudioStreamer;
 			sourceTree = "<group>";
 		};
+		DC1A0B3A13D3264600594D9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A0B3B13D3265B00594D9D /* feed.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		DC32B67113D02B1A002B5FCA = {
 			isa = PBXGroup;
 			children = (
@@ -378,6 +393,7 @@
 		DC32B6A013D02B1B002B5FCA /* neveroutofbetaTests */ = {
 			isa = PBXGroup;
 			children = (
+				DC1A0B3A13D3264600594D9D /* Resources */,
 				DC1A0ABA13D30DF400594D9D /* Classes */,
 				DC32B6A113D02B1B002B5FCA /* Supporting Files */,
 			);
@@ -515,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC32B6A513D02B1B002B5FCA /* InfoPlist.strings in Resources */,
+				DC1A0B3C13D3265B00594D9D /* feed.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC1A0ABD13D30E0900594D9D /* EpisodeTest.m in Sources */,
+				DC1A0B3F13D326AF00594D9D /* EpisodeFeedParserTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

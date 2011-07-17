@@ -69,7 +69,7 @@
     
     cell.titleLabel.text = [episode getVersion];
     cell.descriptionLabel.text = episode.title;
-    cell.dateLabel.text = @"2011-07-10";
+    cell.dateLabel.text = [episode getDate];
     
     return cell;
     
