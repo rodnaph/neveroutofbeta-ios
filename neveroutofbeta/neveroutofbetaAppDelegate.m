@@ -21,6 +21,21 @@
     
 }
 
+- (void)applicationDidEnterForeground:(UIApplication *)application {
+    
+    if ( [navigationController.visibleViewController respondsToSelector:@selector(applicationDidEnterBackground)] ) {
+        [navigationController.visibleViewController performSelector:@selector(applicationDidEnterBackground)];
+    }
+    
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    
+    if ( [navigationController.visibleViewController respondsToSelector:@selector(applicationDidEnterBackground)] ) {
+        [navigationController.visibleViewController performSelector:@selector(applicationDidEnterBackground)];
+    }
+    
+}
 
 - (void)dealloc {
 

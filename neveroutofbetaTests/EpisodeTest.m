@@ -50,4 +50,15 @@
 
 }
 
+- (void)testGetTitleRemovesEpisodePrefix {
+    episode.title = @"Episode 0.9.1 - This title";
+    NSLog( @"Title: %@", [episode getTitle] );
+    STAssertTrue( [[episode getTitle] isEqualToString:@"This title"], @"Prefix not removed" );
+}
+
+- (void)testTitleReturnedInFullWhenItDoesntMatchStandardPrefix {
+    episode.title = @"Now released 0.9.3";
+    STAssertTrue( [[episode getTitle] isEqualToString:@"Now released 0.9.3"], @"Full title expected" );
+}
+
 @end

@@ -57,6 +57,13 @@
 
 - (NSString *)getTitle {
     
+    NSString *titleRegex = @"^Episode \\d+\\.\\d+\\.\\d+\\s+-\\s+(.+)$";
+    NSArray *matches = [title componentsMatchedByRegex:titleRegex];
+    
+    if ( [matches count] > 0 ) {
+        return [matches objectAtIndex:0];
+    }
+    
     return title;
     
 }

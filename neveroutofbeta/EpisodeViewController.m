@@ -6,7 +6,7 @@
 
 @implementation EpisodeViewController
 
-@synthesize episode, streamer;
+@synthesize episode, isVisible;
 @synthesize descriptionLabel, descriptionScrollView, playSlider, playButton, timeLabel, titleLabel;
 
 #pragma mark -
@@ -37,13 +37,14 @@
     [self initUI];
     [self initAudio];
     
+    isVisible = YES;
+    
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    
-    NSLog( @"Duration: %f", [streamer duration] );
-    
+- (void)viewDidDisappear:(BOOL)animated {
 
+    isVisible = NO;
+    
 }
 
 #pragma mark -
@@ -74,7 +75,7 @@
     [playSlider setValue:0.0];
     
     [NSThread detachNewThreadSelector:@selector(updatePlaySliderTicker) toTarget:self withObject:nil];
-        
+
 }
 
 - (void)initAudio {
@@ -86,26 +87,32 @@
 }
 
 - (void)updatePlaySliderTicker {
-        
+
     while ( TRUE ) {
         sleep( 1 );
-        [self performSelectorOnMainThread:@selector(updatePlaySlider)
-                            withObject:nil
-                            waitUntilDone:NO];
+        if ( self.isVisible ) {
+            [self performSelectorOnMainThread:@selector(updatePlaySlider)
+                                withObject:nil
+                                waitUntilDone:NO];
+        }
+        else {
+            [self performSelectorOnMainThread:@selector(pause)
+                                withObject:nil
+                                waitUntilDone:NO];
+            break;
+        }
     }
     
 }
 
 - (void)updatePlaySlider {
         
-    if ( [self.streamer isPlaying] ) {
-            
+    if ( [streamer isPlaying] ) {
+
         int minutes = currentTime / 60;
         int seconds = currentTime - (minutes * 60);
             
-        NSString *timeString = [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
-            
-        self.timeLabel.text = timeString;
+        self.timeLabel.text = [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
 
         currentTime++;
 
@@ -138,7 +145,7 @@
     }
     
     else {
-        [playSlider setValue:0.0];
+        [playSlider setValue:currentTime];
     }
     
 }
@@ -158,6 +165,8 @@
 }
 
 - (void) pause {
+    
+    NSLog( @"PAUSE" );
     
     [streamer pause];
     
