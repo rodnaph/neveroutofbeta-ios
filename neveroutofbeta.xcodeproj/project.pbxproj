@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1A0A8E13D1C2CA00594D9D /* EpisodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1A0A8D13D1C2CA00594D9D /* EpisodeCell.m */; };
+		DC1A0A9313D2D14900594D9D /* Episode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1A0A9213D2D14900594D9D /* Episode.m */; };
+		DC1A0A9D13D2D82B00594D9D /* EpisodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1A0A9C13D2D82B00594D9D /* EpisodeView.xib */; };
+		DC1A0AA013D2D83F00594D9D /* EpisodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1A0A9F13D2D83F00594D9D /* EpisodeViewController.m */; };
 		DC32B68113D02B1A002B5FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68013D02B1A002B5FCA /* UIKit.framework */; };
 		DC32B68313D02B1A002B5FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68213D02B1A002B5FCA /* Foundation.framework */; };
 		DC32B68513D02B1A002B5FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32B68413D02B1A002B5FCA /* CoreGraphics.framework */; };
@@ -51,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC1A0A8C13D1C2CA00594D9D /* EpisodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeCell.h; sourceTree = "<group>"; };
+		DC1A0A8D13D1C2CA00594D9D /* EpisodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeCell.m; sourceTree = "<group>"; };
+		DC1A0A9113D2D14900594D9D /* Episode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Episode.h; sourceTree = "<group>"; };
+		DC1A0A9213D2D14900594D9D /* Episode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Episode.m; sourceTree = "<group>"; };
+		DC1A0A9C13D2D82B00594D9D /* EpisodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeView.xib; sourceTree = "<group>"; };
+		DC1A0A9E13D2D83F00594D9D /* EpisodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeViewController.h; sourceTree = "<group>"; };
+		DC1A0A9F13D2D83F00594D9D /* EpisodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeViewController.m; sourceTree = "<group>"; };
 		DC32B67C13D02B1A002B5FCA /* neveroutofbeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neveroutofbeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC32B68013D02B1A002B5FCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC32B68213D02B1A002B5FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +142,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC1A0A9013D2D13100594D9D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A0A8C13D1C2CA00594D9D /* EpisodeCell.h */,
+				DC1A0A8D13D1C2CA00594D9D /* EpisodeCell.m */,
+				DC1A0A9113D2D14900594D9D /* Episode.h */,
+				DC1A0A9213D2D14900594D9D /* Episode.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		DC32B67113D02B1A002B5FCA = {
 			isa = PBXGroup;
 			children = (
@@ -169,10 +191,11 @@
 		DC32B68613D02B1A002B5FCA /* neveroutofbeta */ = {
 			isa = PBXGroup;
 			children = (
+				DC1A0A9013D2D13100594D9D /* Classes */,
 				DC563D8613D06F8D0037C145 /* Vendor */,
 				DC32B6BA13D02CAC002B5FCA /* Resources */,
 				DC32B6B713D02BAD002B5FCA /* Views */,
-				DC32B6B613D02BA6002B5FCA /* Classes */,
+				DC32B6B613D02BA6002B5FCA /* Controllers */,
 				DC32B68F13D02B1B002B5FCA /* neveroutofbetaAppDelegate.h */,
 				DC32B69013D02B1B002B5FCA /* neveroutofbetaAppDelegate.m */,
 				DC32B69213D02B1B002B5FCA /* MainWindow.xib */,
@@ -212,13 +235,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DC32B6B613D02BA6002B5FCA /* Classes */ = {
+		DC32B6B613D02BA6002B5FCA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				DC32B6B313D02BA3002B5FCA /* HomeViewController.h */,
 				DC32B6B413D02BA3002B5FCA /* HomeViewController.m */,
+				DC1A0A9E13D2D83F00594D9D /* EpisodeViewController.h */,
+				DC1A0A9F13D2D83F00594D9D /* EpisodeViewController.m */,
 			);
-			name = Classes;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		DC32B6B713D02BAD002B5FCA /* Views */ = {
@@ -226,6 +251,7 @@
 			children = (
 				DC32B6B813D02BBE002B5FCA /* HomeView.xib */,
 				DC563DB113D077480037C145 /* EpisodeCell.xib */,
+				DC1A0A9C13D2D82B00594D9D /* EpisodeView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -356,6 +382,7 @@
 				DC32B6BC13D02CB8002B5FCA /* biglogo.png in Resources */,
 				DC563D8513D0521E0037C145 /* smalllogo.png in Resources */,
 				DC563DB213D077480037C145 /* EpisodeCell.xib in Resources */,
+				DC1A0A9D13D2D82B00594D9D /* EpisodeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +430,9 @@
 				DC563DA213D06FA90037C145 /* ASIInputStream.m in Sources */,
 				DC563DA313D06FA90037C145 /* ASINetworkQueue.m in Sources */,
 				DC563DA713D06FE40037C145 /* Reachability.m in Sources */,
+				DC1A0A8E13D1C2CA00594D9D /* EpisodeCell.m in Sources */,
+				DC1A0A9313D2D14900594D9D /* Episode.m in Sources */,
+				DC1A0AA013D2D83F00594D9D /* EpisodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

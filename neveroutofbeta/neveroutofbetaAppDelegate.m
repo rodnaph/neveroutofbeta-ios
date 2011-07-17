@@ -10,9 +10,11 @@
                                     initWithNibName:@"HomeView"
                                     bundle:nil];
     
-    window.rootViewController = homeView;
+    navigationController = [[UINavigationController alloc] initWithRootViewController:homeView];
     [homeView release];
-    
+
+    window.rootViewController = navigationController;
+
     [window makeKeyAndVisible];
     
     return YES;
