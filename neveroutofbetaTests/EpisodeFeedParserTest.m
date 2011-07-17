@@ -22,8 +22,9 @@
 
 - (void)testEpisodesInFeedHavePropertiesCorrectlySet {
     Episode *episode = (Episode *) [[parser getEpisodesFromUrl:xmlUrl] objectAtIndex:1];
+    NSLog( @"Debug: %@", episode.description );
     STAssertTrue( [episode.title isEqualToString:@"the episode title"], @"Title incorrect" );
-    STAssertTrue( [episode.description isEqualToString:@"the <b>episode</b> description"], @"Description incorrect" );
+    STAssertTrue( [episode.description isEqualToString:@"The <b>episode</b> description"], @"Description incorrect" );
 }
 
 @end

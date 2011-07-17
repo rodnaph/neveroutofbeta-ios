@@ -51,8 +51,6 @@
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
     
-    
-    
     if ( [elementName isEqualToString:@"item"] ) {
         
         if ( currentEpisode != nil ) {
@@ -74,7 +72,7 @@
     
     else if ( currentEpisode != nil ) {
 
-        NSString *string = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        NSString *string = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\r\n\t "]];
         
         if ( [elementName isEqualToString:@"link"] ) {
             currentEpisode.link = [NSURL URLWithString:string];
