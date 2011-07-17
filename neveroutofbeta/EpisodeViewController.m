@@ -121,6 +121,29 @@
 }
 
 #pragma mark -
+#pragma mark Application Methods
+
+- (void)applicationDidEnterBackground {
+    
+    if ( [streamer isPlaying] ) {
+        [streamer pause];
+    }
+    
+    isVisible = NO;
+    
+}
+
+- (void)applicationDidEnterForeground {
+    
+    if ( [streamer isPaused] ) {
+        [streamer start];
+    }
+    
+    isVisible = YES;
+    
+}
+
+#pragma mark -
 #pragma mark Actions
 
 - (IBAction)playClicked {
@@ -165,8 +188,6 @@
 }
 
 - (void) pause {
-    
-    NSLog( @"PAUSE" );
     
     [streamer pause];
     
