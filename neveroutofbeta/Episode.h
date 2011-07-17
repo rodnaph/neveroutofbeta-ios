@@ -1,7 +1,11 @@
 
 @interface Episode : NSObject {}
 
-@property (nonatomic, retain) NSString *title, *description;
-@property (nonatomic, retain) NSDate *datePosted;
+@property (nonatomic, copy) NSString *title, *description;
+@property (nonatomic, copy) NSDate *datePosted;
+@property (nonatomic, copy) NSURL *link;
+
+- (NSURL *)getAudioUrl;
+- (NSString *)getVersion;
 
 @end

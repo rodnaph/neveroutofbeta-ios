@@ -4,24 +4,55 @@
 
 @implementation EpisodeViewController
 
-@synthesize episode, descriptionLabel, descriptionScrollView;
+@synthesize episode, descriptionLabel, descriptionScrollView, playSlider, playButton;
 
 - (void)viewDidLoad {
 
-    self.title = @"0.9.1";
+    NSLog( @"Episode: %@", episode.description );
     
-    descriptionLabel.text = @"foo foo foo foo GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG GGGG foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo foo  foo foo foo foo foo foo foo foo foo foo foo foo  foo foo foo foo foo foo foo foo foo foo foo foo END";
+    [self initUI];
+    [self initAudio];
+    
+}
+
+- (void)initUI {
+    
+    self.title = [episode getVersion];
+    
+    descriptionLabel.text = episode.description;
     [descriptionLabel sizeToFit];
     
     descriptionScrollView.contentSize = descriptionLabel.frame.size;
     
 }
 
+- (void)initAudio {
+    
+    NSURL *audioUrl = [episode getAudioUrl];
+    streamer = [[AudioStreamer alloc] initWithURL:audioUrl];
+    
+    NSLog( @"Audio URL: %@", audioUrl );
+    
+    [streamer start];
+    
+}
+
+- (IBAction)playClicked {
+    
+    NSLog( @"Play clicked" );
+    
+}
+
 - (void)dealloc {
+    
+    [streamer stop];
     
     [episode release];
     [descriptionLabel release];
     [descriptionScrollView release];
+    [playSlider release];
+    [playButton release];
+    [streamer release];
     
     [super dealloc];
     

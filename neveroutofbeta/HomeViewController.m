@@ -1,28 +1,63 @@
 
 #import "HomeViewController.h"
-#import "ASIHTTPRequest.h"
 #import "EpisodeCell.h"
 #import "EpisodeViewController.h"
+#import "EpisodeFeedParser.h"
 
 @implementation HomeViewController
 
+#pragma mark -
+#pragma mark Init
+
+- (void)dealloc {
+    
+    [episodes release];
+    [tableView release];
+    
+    [super dealloc];
+    
+}
+
+#pragma mark -
+#pragma mark View
+
 - (void)viewDidLoad {
     
-    [self loadEpisodes];
+    self.title = @"Home";
+    
+    episodes = nil;
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    if ( episodes == nil ) {
+        [self loadEpisodes];
+    }
+    
+}
+
+#pragma mark -
+#pragma mark Methods
+
+- (void)loadEpisodes {
+    
+    EpisodeFeedParser *parser = [[EpisodeFeedParser alloc] init];
+    
+    episodes = [[parser getEpisodes] retain];
+    [parser release];
+    
     [tableView reloadData];
     
 }
 
-- (void)loadEpisodes {
-    
-//    NSString *urlString = @"http://www.neveroutofbeta.com/feed/";
-//    NSURL *url = [NSURL URLWithString:urlString];
-//    ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:url];
-    
-}
+#pragma mark -
+#pragma mark Table View
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    
+    return [episodes count];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -30,8 +65,10 @@
     NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"EpisodeCell" owner:self options:nil];
     EpisodeCell *cell = (EpisodeCell *) [objects objectAtIndex:0];
     
-    cell.titleLabel.text = @"0.9.1";
-    cell.descriptionLabel.text = @"We are live!";
+    Episode *episode = [episodes objectAtIndex:indexPath.row];
+    
+    cell.titleLabel.text = [episode getVersion];
+    cell.descriptionLabel.text = episode.title;
     cell.dateLabel.text = @"2011-07-10";
     
     return cell;
@@ -49,6 +86,8 @@
     EpisodeViewController *ctrl = [[EpisodeViewController alloc]
                                    initWithNibName:@"EpisodeView"
                                    bundle:nil];
+  
+    ctrl.episode = (Episode *) [episodes objectAtIndex:[indexPath row]];
     
     [self.navigationController pushViewController:ctrl animated:YES];
     

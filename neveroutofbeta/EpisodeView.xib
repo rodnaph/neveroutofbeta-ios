@@ -46,13 +46,13 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIImageView" id="70372449">
+					<object class="IBUIImageView" id="379759545">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{18, 17}, {148, 330}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="842714745"/>
 						<float key="IBUIAlpha">0.20000000298023224</float>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -61,13 +61,13 @@
 							<string key="NSResourceName">biglogo.png</string>
 						</object>
 					</object>
-					<object class="IBUIButton" id="244665424">
+					<object class="IBUIButton" id="468528862">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 368}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="552078344"/>
+						<reference key="NSNextKeyView" ref="226263343"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -92,17 +92,18 @@
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
 					</object>
-					<object class="IBUIScrollView" id="935952508">
+					<object class="IBUIScrollView" id="842714745">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">268</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUILabel" id="1068517293">
-								<reference key="NSNextResponder" ref="935952508"/>
+							<object class="IBUILabel" id="1072055157">
+								<reference key="NSNextResponder" ref="842714745"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{20, 20}, {242, 292}}</string>
-								<reference key="NSSuperview" ref="935952508"/>
+								<reference key="NSSuperview" ref="842714745"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="468528862"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
@@ -126,11 +127,12 @@
 						<string key="NSFrame">{{18, 62}, {282, 332}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="1072055157"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBUISlider" id="552078344">
+					<object class="IBUISlider" id="226263343">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{98, 376}, {204, 23}}</string>
@@ -147,7 +149,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="70372449"/>
+				<reference key="NSNextKeyView" ref="379759545"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -169,19 +171,44 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">descriptionScrollView</string>
+						<string key="label">descriptionLabel</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="935952508"/>
+						<reference key="destination" ref="1072055157"/>
 					</object>
-					<int key="connectionID">12</int>
+					<int key="connectionID">20</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">descriptionLabel</string>
+						<string key="label">descriptionScrollView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="1068517293"/>
+						<reference key="destination" ref="842714745"/>
 					</object>
-					<int key="connectionID">16</int>
+					<int key="connectionID">21</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">playButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="468528862"/>
+					</object>
+					<int key="connectionID">22</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">playSlider</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="226263343"/>
+					</object>
+					<int key="connectionID">23</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">playClicked</string>
+						<reference key="source" ref="468528862"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">24</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -198,10 +225,10 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="70372449"/>
-							<reference ref="935952508"/>
-							<reference ref="244665424"/>
-							<reference ref="552078344"/>
+							<reference ref="379759545"/>
+							<reference ref="842714745"/>
+							<reference ref="468528862"/>
+							<reference ref="226263343"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -218,31 +245,31 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="70372449"/>
+						<reference key="object" ref="379759545"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="244665424"/>
+						<reference key="object" ref="468528862"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">11</int>
-						<reference key="object" ref="935952508"/>
+						<reference key="object" ref="842714745"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1068517293"/>
+							<reference ref="1072055157"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="1068517293"/>
-						<reference key="parent" ref="935952508"/>
+						<reference key="object" ref="1072055157"/>
+						<reference key="parent" ref="842714745"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="552078344"/>
+						<reference key="object" ref="226263343"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -286,7 +313,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">16</int>
+			<int key="maxID">24</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -294,17 +321,32 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">EpisodeViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">playClicked</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">playClicked</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">playClicked</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>descriptionLabel</string>
 							<string>descriptionScrollView</string>
+							<string>playButton</string>
+							<string>playSlider</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UILabel</string>
 							<string>UIScrollView</string>
+							<string>UIButton</string>
+							<string>UISlider</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -313,6 +355,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>descriptionLabel</string>
 							<string>descriptionScrollView</string>
+							<string>playButton</string>
+							<string>playSlider</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -323,6 +367,14 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">descriptionScrollView</string>
 								<string key="candidateClassName">UIScrollView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">playButton</string>
+								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">playSlider</string>
+								<string key="candidateClassName">UISlider</string>
 							</object>
 						</object>
 					</object>
