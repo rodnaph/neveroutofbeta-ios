@@ -1,6 +1,6 @@
 
 @interface HomeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-    IBOutlet UITableView *tableView;
+    IBOutlet UITableView *episodeTable;
     NSMutableArray *episodes;
 }
 

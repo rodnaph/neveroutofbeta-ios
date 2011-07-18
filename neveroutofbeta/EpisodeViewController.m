@@ -109,11 +109,16 @@
         
     if ( [streamer isPlaying] ) {
 
+        double duration = [streamer duration];
         int minutes = currentTime / 60;
         int seconds = currentTime - (minutes * 60);
             
         self.timeLabel.text = [NSString stringWithFormat:@"%d:%02d", minutes, seconds];
 
+        if ( duration > 0 ) {
+            [playSlider setValue:(currentTime / duration)];
+        }
+        
         currentTime++;
 
     }
@@ -165,10 +170,6 @@
     if ( [streamer isPlaying] || [streamer isPaused] ) {
         currentTime = [streamer duration] * [playSlider value];
         [streamer seekToTime:currentTime];
-    }
-    
-    else {
-        [playSlider setValue:currentTime];
     }
     
 }

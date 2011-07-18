@@ -173,7 +173,7 @@
 		DC32B6B413D02BA3002B5FCA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DC32B6B813D02BBE002B5FCA /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		DC32B6BB13D02CB8002B5FCA /* biglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biglogo.png; sourceTree = "<group>"; };
-		DC563D8413D0521E0037C145 /* smalllogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smalllogo.png; sourceTree = "<group>"; };
+		DC563D8413D0521E0037C145 /* smalllogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smalllogo.png; path = ../smalllogo.png; sourceTree = "<group>"; };
 		DC563DA813D070110037C145 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DC563DAA13D0701A0037C145 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DC563DAC13D0701F0037C145 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -327,7 +327,6 @@
 			children = (
 				DC1A0AC213D3119600594D9D /* libicucore.A.dylib */,
 				DC563DAF13D070460037C145 /* libz.1.2.3.dylib */,
-				DC563D8413D0521E0037C145 /* smalllogo.png */,
 				DC32B68613D02B1A002B5FCA /* neveroutofbeta */,
 				DC32B6A013D02B1B002B5FCA /* neveroutofbetaTests */,
 				DC32B67F13D02B1A002B5FCA /* Frameworks */,
@@ -434,6 +433,7 @@
 		DC32B6BA13D02CAC002B5FCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC563D8413D0521E0037C145 /* smalllogo.png */,
 				DC32B6BB13D02CB8002B5FCA /* biglogo.png */,
 			);
 			name = Resources;

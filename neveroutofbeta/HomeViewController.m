@@ -12,7 +12,7 @@
 - (void)dealloc {
     
     [episodes release];
-    [tableView release];
+    [episodeTable release];
     
     [super dealloc];
     
@@ -47,12 +47,12 @@
     episodes = [[parser getEpisodes] retain];
     [parser release];
     
-    [tableView reloadData];
+    [episodeTable reloadData];
     
 }
 
 #pragma mark -
-#pragma mark Table View
+#pragma mark Episodes Table
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -83,6 +83,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    [cell setSelectionStyle:UITableViewCellEditingStyleNone];
+    [cell setUserInteractionEnabled:NO];
+    
     EpisodeViewController *ctrl = [[EpisodeViewController alloc]
                                    initWithNibName:@"EpisodeView"
                                    bundle:nil];
@@ -92,7 +97,9 @@
     [self.navigationController pushViewController:ctrl animated:YES];
     
     [ctrl release];
-    
+
+    [cell setUserInteractionEnabled:YES];
+
 }
 
 @end
