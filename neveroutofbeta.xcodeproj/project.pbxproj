@@ -67,6 +67,7 @@
 		DC563DAD13D0701F0037C145 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC563DAC13D0701F0037C145 /* MobileCoreServices.framework */; };
 		DC563DB013D070460037C145 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC563DAF13D070460037C145 /* libz.1.2.3.dylib */; };
 		DC563DB213D077480037C145 /* EpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC563DB113D077480037C145 /* EpisodeCell.xib */; };
+		DC97F4E813D4F2C40051363B /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC97F4E713D4F2C40051363B /* Entitlements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		DC563DAE13D070270037C145 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DC563DAF13D070460037C145 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		DC563DB113D077480037C145 /* EpisodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeCell.xib; sourceTree = "<group>"; };
+		DC97F4E713D4F2C40051363B /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 		DC32B67113D02B1A002B5FCA = {
 			isa = PBXGroup;
 			children = (
+				DC97F4E713D4F2C40051363B /* Entitlements.plist */,
 				DC1A0AC213D3119600594D9D /* libicucore.A.dylib */,
 				DC563DAF13D070460037C145 /* libz.1.2.3.dylib */,
 				DC32B68613D02B1A002B5FCA /* neveroutofbeta */,
@@ -523,6 +526,7 @@
 				DC563D8513D0521E0037C145 /* smalllogo.png in Resources */,
 				DC563DB213D077480037C145 /* EpisodeCell.xib in Resources */,
 				DC1A0A9D13D2D82B00594D9D /* EpisodeView.xib in Resources */,
+				DC97F4E813D4F2C40051363B /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,12 +682,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "neveroutofbeta/neveroutofbeta-Prefix.pch";
 				INFOPLIST_FILE = "neveroutofbeta/neveroutofbeta-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -692,11 +699,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "neveroutofbeta/neveroutofbeta-Prefix.pch";
 				INFOPLIST_FILE = "neveroutofbeta/neveroutofbeta-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -746,6 +756,61 @@
 			};
 			name = Release;
 		};
+		DC97F4EA13D4F3520051363B /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = "Ad Hoc";
+		};
+		DC97F4EB13D4F3520051363B /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neveroutofbeta/neveroutofbeta-Prefix.pch";
+				INFOPLIST_FILE = "neveroutofbeta/neveroutofbeta-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		DC97F4EC13D4F3520051363B /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/neveroutofbeta.app/neveroutofbeta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neveroutofbetaTests/neveroutofbetaTests-Prefix.pch";
+				INFOPLIST_FILE = "neveroutofbetaTests/neveroutofbetaTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = "Ad Hoc";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -754,6 +819,7 @@
 			buildConfigurations = (
 				DC32B6AB13D02B1B002B5FCA /* Debug */,
 				DC32B6AC13D02B1B002B5FCA /* Release */,
+				DC97F4EA13D4F3520051363B /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -763,6 +829,7 @@
 			buildConfigurations = (
 				DC32B6AE13D02B1B002B5FCA /* Debug */,
 				DC32B6AF13D02B1B002B5FCA /* Release */,
+				DC97F4EB13D4F3520051363B /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -772,6 +839,7 @@
 			buildConfigurations = (
 				DC32B6B113D02B1B002B5FCA /* Debug */,
 				DC32B6B213D02B1B002B5FCA /* Release */,
+				DC97F4EC13D4F3520051363B /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
